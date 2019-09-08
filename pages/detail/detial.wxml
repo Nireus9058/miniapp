@@ -1,0 +1,60 @@
+<!--pages/detail/detial.wxml-->
+<swiper indicator-dots="{{true}}" class="det_slider_item" 
+  circular
+  >
+    <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <image src="{{item}}" class="slide-image" class="det_slider" mode="widthFix" bindload='imgHeight'/>
+    </swiper-item>
+</swiper>
+
+
+<van-cell title="Dickies 多色Logo印花短袖T恤"  size="large" label="活动价 ￥399.00" 
+ custom-class='det_cell'
+ title-class='det_title'
+ label-class='det_des'
+ value-class='det_value'
+>
+
+<van-icon slot="right-icon" name="share" class="custom-icon"  custom-class='det_icon'/>
+</van-cell>
+
+<van-cell title="促销" is-link custom-class='cuxiao' use-label-slot title-class='cu_title'>
+   <text slot="label" class="baoyou">满2件 ,部分地区包邮</text>
+</van-cell>
+<van-cell title="请选择 颜色 尺码 数量" is-link custom-class='chicun' />
+
+<van-tabs bind:click="onClick">
+  <van-tab title="图文属性"></van-tab>
+  <van-tab title="商品属性"></van-tab>
+</van-tabs>
+
+
+<image src='https://img.alicdn.com/imgextra/i1/454291526/O1CN01CuG04q1N8wwktdD6p-454291526.jpg' mode='aspectFill' class="det_body_img1"/>
+<image src='https://img.alicdn.com/imgextra/i1/454291526/O1CN01ZKHXvb1N8wwhafa1g-454291526.jpg'  mode='aspectFill' class="det_body_img2"/>
+<image src='https://img.alicdn.com/imgextra/i4/454291526/O1CN01FRoqR31N8wwktg1hj-454291526.jpg'mode='aspectFill' class="det_body_img3"/>
+<image src='https://img.alicdn.com/imgextra/i1/454291526/O1CN01Y8bTrD1N8wwl1Epa3-454291526.jpg'  mode='aspectFill' class="det_body_img4"/>
+<image src='https://img.alicdn.com/imgextra/i1/454291526/O1CN01EWVGNW1N8wwam4gG1-454291526.jpg'  mode='aspectFill' class="det_body_img5"/>
+<image src='https://img.alicdn.com/imgextra/i4/454291526/O1CN01l4XJX61N8wwd0NRDB-454291526.jpg'  mode='aspectFill' class="det_body_img6"/>
+<image src='https://img.alicdn.com/imgextra/i3/454291526/O1CN01ZJC8GA1N8wwS0LmgY-454291526.jpg'  mode='aspectFill' class="det_body_img7"/>
+<image src='https://img.alicdn.com/imgextra/i1/454291526/O1CN01GvqIkm1N8wwYqjyqI-454291526.jpg'  mode='aspectFill' class="det_body_img8"/>
+<image src='https://img.alicdn.com/imgextra/i4/454291526/O1CN01NO8RVV1N8wwcXMIhb-454291526.jpg' mode='aspectFill'  class="det_body_img9"/>
+
+
+
+
+<van-goods-action custom-class='det_action'>
+  <navigator url='/pages/mine/mine' open-type='switchTab'>
+    <van-goods-action-icon icon="user-o" text="我的" />
+  </navigator>
+  <navigator url='/pages/cart/cart' open-type='switchTab'>
+    <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+  </navigator>
+
+  <van-goods-action-icon icon="shop-o" text="店铺" bindtap='navigator'/>
+ 
+  <van-goods-action-button text="加入购物车" type="warning" custom-class='det_text' />
+  <van-goods-action-button text="立即购买" url='/pages/cart/cart' link-type="switchTab"
+   url='/pages/cart/cart'
+   link-type='switchTab'
+  />
+</van-goods-action>

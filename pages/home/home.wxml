@@ -1,0 +1,91 @@
+<!--pages/home/home.wxml-->
+<van-search class='search'
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+<van-tabs active="{{ active }}">
+  <van-tab title="T恤"></van-tab>
+  <van-tab title="短裤"></van-tab>
+  <van-tab title="POLO衫"></van-tab>
+  <van-tab title="卫衣"></van-tab>
+  <van-tab title="夹克"></van-tab>
+  <van-tab title="牛仔"></van-tab>
+  <van-tab title="鞋子"></van-tab>
+</van-tabs>
+
+<swiper indicator-dots="{{true}}"
+  autoplay="{{true}}" 
+  interval="{{2000}}" 
+  duration="{{200}}"
+  circular
+  class="home_slider" 
+  indicator-dots="{{true}}" 
+  >
+    <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <navigator url="{{'/pages/detail/detial?index=' + index}}">
+      <image src="{{item.image}}" class="slide-image" class="slider" bindload='imgHeight'/>
+    </navigator>
+    </swiper-item>
+
+</swiper>
+
+
+<view class='sub'>
+
+<view class='subject'>
+  <view class='sub_b1'>
+    <image src="/images/sub_b1.jpg">
+    </image>
+  </view>
+
+ <view  class='sub_item'>
+<image src="/images/sub1.jpg" class='sub_b2' mode='aspectFill'  bindtap='previewImage'/> 
+ </view>
+<view  class='sub_item'>
+<image src="/images/sub2.jpg" class='sub_b2' mode='aspectFill'  bindtap='previewImage'/>  
+</view>
+<view  class='sub_item'>
+<image src="/images/sub3.jpg" class='sub_b2' mode='aspectFill'  bindtap='previewImage'/>
+</view>
+ <view class='sub_item'>
+<image src="/images/sub4.jpg" class='sub_b2' mode='aspectFill'  bindtap='previewImage'/>
+</view>
+
+
+<view class='product'>
+
+<navigator
+ url="{{'/pages/detail/detial?titel=' + item.titel}}"
+ open-type='navigate'class='pro_item' 
+ wx:for='{{board}}' wx:key='{{item.id}}'
+>
+ <image src='{{item.image}}' class='pro_b1' mode='aspectFit' />
+</navigator>
+<!-- <view class='pro_item'>
+<image src='/images/pro2.jpg' class='pro_b1' mode='aspectFit'  />
+</view>
+  <view class='pro_item'><image src='/images/pro3.jpg' class='pro_b1' mode='aspectFit' /></view>
+<view class='pro_item'><image src='/images/pro4.jpg' class='pro_b1' mode='aspectFit' /></view>
+  <view class='pro_item'><image src='/images/pro5.jpg' class='pro_b1' mode='aspectFit' /></view>
+<view class='pro_item'><image src='/images/pro6.jpg' class='pro_b1' mode='aspectFit' /></view>
+  <view class='pro_item'><image src='/images/pro7.jpg' class='pro_b1' mode='aspectFit' /></view>
+<view class='pro_item'><image src='/images/pro8.jpg' class='pro_b1' mode='aspectFit' /></view> -->
+
+</view>
+
+
+</view>
+</view>
+
+<navigator url='/pages/follow/follow' open-type='switchTab' >
+<view class='gif'>
+ <image src="/images/gif.jpg" mode='scaleToFill' />
+</view>
+</navigator>
+
+<view class='logo'>
+ <image src="/images/logo.jpg" mode='aspectFill' />
+</view>

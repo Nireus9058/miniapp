@@ -1,0 +1,35 @@
+<!--pages/follow/follow.wxml-->
+<view class='search'>
+<van-icon name="bars" class='bars' size="50rpx"/>
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" shape="round" class='search-item'/>
+<van-icon name="label" class='label'  size="50rpx"/>
+</view>
+
+<van-tabs sticky swipe-threshold="5" line-width='0' class='tabs' >
+  <van-tab title="综合"></van-tab>
+  <van-tab title="销量"></van-tab>
+  <van-tab title="新品"></van-tab>
+  <van-tab title="价格"></van-tab>
+  <van-tab title="筛选"></van-tab>
+</van-tabs>
+
+<view class='prod'>
+<navigator url='/pages/detail/detial' open-type='navigate'class='prod_p' 
+ wx:for='{{board}}' wx:key='{{item.id}}'
+ >
+  <image class='prod_img'src='{{item.image}}'/>
+  <view class='pro_text'>
+    <text class='title'>{{item.tit}}</text>
+    <view  class='bao'><text class='baoyou'>{{item.laber}}</text></view>
+    <view class='jia'>
+      <text class='jiage'>{{item.price}}</text>
+      <image src='/images/pro_cart.png' class='cart' catchtap='showToast'/>
+    </view>
+  </view>
+</navigator>
+
+</view>
+
+<view class='logo'>
+ <image src="https://img.ixiumei.com/uploadfile/2019/0611/20190611015211744.png" mode='aspectFill' />
+</view>

@@ -1,0 +1,45 @@
+/* pages/cart/cart.wxss */
+.product_box{
+ background-color: #fff !important;
+ border-bottom:2rpx solid #eee !important;
+ padding-top:15rpx !important;
+ margin-bottom:2rpx !important;
+}
+.thumb_box{
+  height:270rpx;
+  width:100%;
+}
+.pri_box{
+  font-size:40rpx !important;
+  height:100rpx !important;
+}
+.des_box{
+ font-size:30rpx !important;
+ margin-bottom:10rpx !important;
+ 
+}
+.tit_box{
+ font-size:35rpx !important;
+ line-height:50rpx !important;
+ text-overflow:ellipsis !important;
+ overflow: hidden !important;
+ white-space: nowrap!important;
+ margin-bottom:10rpx !important;
+
+}
+
+.del_btn{
+  background-color: #ee3f4d;
+  text-align:center;
+  text-indent:-20rpx;
+  line-height:250rpx;
+  width:150rpx;
+  height:300rpx;
+}
+.radio_btn{
+  margin-left:20rpx !important;
+  margin-top:6rpx;
+}
+.shan{
+  color:red;
+}

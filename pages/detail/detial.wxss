@@ -1,0 +1,79 @@
+/* pages/detail/detial.wxss */
+.det_text{
+  background:#464452 !important;
+}
+.det_slider_item{
+  width:100% ; height:800rpx;
+}
+.det_cell{
+  height:200rpx !important;
+}
+.det_slider{
+  width:100% ; height:800rpx;
+}
+.det_title{
+   text-overflow:ellipsis !important;
+    font:700 40rpx/45rpx "" !important;
+}
+.det_des{
+  color:#E35f74 !important;
+  font:35rpx/40rpx "" !important;
+}
+.det_icon{
+  width:40rpx !important;
+  height:40repx !important;
+}
+.cuxiao{
+  border-top: 20rpx solid rgba(230, 227, 227, 0.315) !important;
+  border-bottom: 10rpx solid  rgba(230, 227, 227, 0.315) !important;
+}
+.cu_title{
+    font:30rpx/50rpx "" !important;
+}
+.baoyou{
+  color:#E35f74;
+  border: 2rpx solid #E35f74;
+  padding:5rpx
+}
+.chicun{
+  border-top: 10rpx solid  rgba(230, 227, 227, 0.315)!important;
+  border-bottom: 20rpx solid  rgba(230, 227, 227, 0.315) !important;
+}
+
+.det_action{
+  z-index:99 !important;
+}
+.det_body_img1{
+  width:100%;
+  height:650rpx;
+}
+.det_body_img2{
+  width:100%;
+   height:1250rpx;
+}
+.det_body_img3{
+  width:100%;
+   height:1250rpx;
+
+}
+.det_body_img4{
+  width:100%;
+  height:2550rpx;
+
+}
+.det_body_img5{
+  width:100% ;
+   height:1200rpx;
+
+}
+.det_body_img6{
+  width:100% 
+}
+.det_body_img7{
+  width:100% 
+}
+.det_body_img8{
+  width:100% ;
+
+}
+

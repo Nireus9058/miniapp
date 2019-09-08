@@ -1,0 +1,104 @@
+<!--pages/mine/mine.wxml-->
+<view class='user_h'>
+ <view  class='user_h_tou'>
+
+   <view class='user_xiang'>
+   <open-data type='userAvatarUrl'></open-data>
+     <!-- <image src='/images/user_tou.jpg'mode='scaleToFill' /> -->
+     </view>
+   <view  class='user_name'>
+     <view class='user_item1'>森丸-新享卡</view>
+     <view class='user_item2'>积分余额 : 0</view>
+   </view>
+<image src='/images/erweima.png' class='user_erweima' mode='aspectFit'/>
+ </view>
+</view>
+
+<view class='user_xuan'>
+ <view class='user_xuan_item'><image class='user_xuan_img' src='/images/jifen.png'/> 
+ <view>积分兑换</view>
+</view>
+  <view class='user_xuan_item'><image class='user_xuan_img' src='/images/huiyuan.png'/>
+   <view>会员专享</view>
+   </view>
+   <view class='user_xuan_item'><image class='user_xuan_img' src='/images/pinpai.png'/>
+    <view>品牌咨询</view>
+    </view>
+    <view class='user_xuan_item'><image class='user_xuan_img' src='/images/gengduo.png'/> 
+    <view>更多</view>
+    </view>
+</view>
+
+<swiper indicator-dots="{{true}}"
+  autoplay="{{true}}" 
+  interval="{{1000}}" 
+  duration="{{100}}"
+  circular
+  
+  >
+    <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <image src="{{item}}" class="slide-image" class="user_slider"/>
+    </swiper-item>
+
+</swiper>
+
+<i-grid i-class='user_gg'>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/kajuan.png" />
+        </i-grid-icon>
+        <i-grid-label>我的卡卷</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/zhuanqu.png" />
+        </i-grid-icon>
+        <i-grid-label>赚取积分</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/shangcheng.png" />
+        </i-grid-icon>
+        <i-grid-label>商城订单</i-grid-label>
+    </i-grid-item>
+</i-grid>
+<i-grid>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/duanhuan.png" />
+        </i-grid-icon>
+        <i-grid-label>积分兑换</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/ziliao.png" />
+        </i-grid-icon>
+        <i-grid-label>个人资料</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/gouwu.png" />
+        </i-grid-icon>
+        <i-grid-label>购物车</i-grid-label>
+    </i-grid-item>
+</i-grid>
+<i-grid>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/lianxi.png" />
+        </i-grid-icon>
+        <i-grid-label>联系导购</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/tousu.png" />
+        </i-grid-icon>
+        <i-grid-label>投诉与建议</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class='user_grid'>
+        <i-grid-icon>
+            <image src="/images/dingdan.png" />
+        </i-grid-icon>
+        <i-grid-label>门店订单</i-grid-label>
+    </i-grid-item>
+</i-grid>

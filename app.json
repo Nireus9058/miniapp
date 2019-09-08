@@ -1,0 +1,85 @@
+{
+  "pages": [
+      "pages/detail/detial",
+        "pages/home/home",
+      "pages/mine/mine",
+    "pages/splash/splash",
+
+ 
+ 
+    "pages/cart/cart",
+    "pages/follow/follow"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "首  页",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#3A3A3A",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 100000,
+    "uploadFile": 100000,
+    "downloadFile": 100000
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "vant-weapp/button",
+    "van-search": "vant-weapp/search",
+    "van-tab": "vant-weapp/tab",
+    "van-tabs": "vant-weapp/tabs",
+    "van-icon": "vant-weapp/icon",
+    "van-card": "vant-weapp/card",
+    "van-stepper": "vant-weapp/stepper",
+    "van-swipe-cell": "vant-weapp/swipe-cell",
+    "van-submit-bar": "vant-weapp/submit-bar",
+    "van-tag": "vant-weapp/tag",
+    "van-radio": "vant-weapp/radio",
+    "van-radio-group": "vant-weapp/radio-group",
+    "van-tabbar": "vant-weapp/tabbar",
+    "van-tabbar-item": "vant-weapp/tabbar-item",
+    "i-grid": "../../dist/grid/index",
+    "i-grid-item": "../../dist/grid-item/index",
+    "i-grid-icon": "../../dist/grid-icon/index",
+    "i-grid-label": "../../dist/grid-label/index",
+    "van-goods-action": "vant-weapp/goods-action",
+    "van-goods-action-icon": "vant-weapp/goods-action-icon",
+    "van-goods-action-button": "vant-weapp/goods-action-button",
+    "van-cell": "vant-weapp/cell",
+    "van-cell-group": "vant-weapp/cell-group"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#399",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首 页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      },
+      {
+        "pagePath": "pages/follow/follow",
+        "text": "分 类",
+        "iconPath": "images/follow.png",
+        "selectedIconPath": "images/follow_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我 的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_active.png"
+      }
+    ]
+  }
+}

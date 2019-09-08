@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": false,
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ccc",
+  "navigationBarTitleText": "购 物 车",
+  "navigationBarTextStyle": "black",
+  "backgroundColorTop": "#3A3A3A"
+}

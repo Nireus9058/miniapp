@@ -1,0 +1,92 @@
+<!--pages/cart/cart.wxml-->
+<van-swipe-cell right-width='65' left-width>
+<van-card 
+  price="699.00"
+  desc="170/M/黑白条"
+  title="商城同款gxgieans夏日字母拼接圆领短袖男"
+  lazy-load="true"
+  custom-class="product_box"
+  price-class='pri_box'
+  desc-class='des_box'
+  title-class="tit_box"
+>
+  <image src='https://img12.static.yhbimg.com/goodsimg/2019/07/29/09/02706a82e1c5f28b430cd565d607e3fb20.jpg?imageMogr2/thumbnail/280x382/background/d2hpdGU=/position/center/quality/80' slot="thumb" class='thumb_box'/>
+
+  <view slot="footer" custom-class="stepper_box">
+      <van-stepper custom-class="stepper_btn"
+        value="1"
+        integer
+        min="1"
+        max="99"
+        step="1"
+        bind:change="onChange"
+      />
+  </view>
+</van-card>
+  <view slot="right" class="del_btn">删除</view>
+</van-swipe-cell>
+
+<van-swipe-cell right-width='65' left-width>
+<van-card 
+  price="699.00"
+  desc="170/M/黑白条"
+  title="商城同款gxgieans夏日字母拼接圆领短袖男"
+  lazy-load="true"
+  custom-class="product_box"
+  price-class='pri_box'
+  desc-class='des_box'
+  title-class="tit_box"
+>
+  <image src='https://img12.static.yhbimg.com/goodsimg/2019/07/29/09/02706a82e1c5f28b430cd565d607e3fb20.jpg?imageMogr2/thumbnail/280x382/background/d2hpdGU=/position/center/quality/80' slot="thumb" class='thumb_box'/>
+
+  <view slot="footer" custom-class="stepper_box">
+      <van-stepper custom-class="stepper_btn"
+        value="1"
+        integer
+        min="1"
+        max="99"
+        step="1"
+        bind:change="onChange"
+      />
+  </view>
+</van-card>
+  <view slot="right" class="del_btn">删除</view>
+</van-swipe-cell>
+
+<van-swipe-cell right-width='65' left-width >
+<van-card 
+  price="699.00"
+  desc="170/M/黑白条"
+  title="商城同款gxgieans夏日字母拼接圆领短袖男"
+  lazy-load="true"
+  custom-class="product_box"
+  price-class='pri_box'
+  desc-class='des_box'
+  title-class="tit_box"
+>
+  <image src='https://img12.static.yhbimg.com/goodsimg/2019/07/29/09/02706a82e1c5f28b430cd565d607e3fb20.jpg?imageMogr2/thumbnail/280x382/background/d2hpdGU=/position/center/quality/80' slot="thumb" class='thumb_box'/>
+
+  <view slot="footer" custom-class="stepper_box">
+      <van-stepper custom-class="stepper_btn"
+        value="1"
+        integer
+        min="1"
+        max="99"
+        step="1"
+        bind:change="onChange"
+      />
+  </view>
+</van-card>
+  <view slot="right" class="del_btn">删除</view>
+</van-swipe-cell>
+
+<van-submit-bar
+  price="{{300900}}"
+  button-text="去结算"
+  bind:submit="onClickButton"
+  safe-area-inset-bottom="true"
+>
+<van-radio-group value="1" bind:change="onChange" class='radio_btn'>
+  <van-radio name="1" checked-color='red' class='xuan'>全 选 <text space='nbsp' decode class='shan'>&nbsp;删除</text></van-radio>
+</van-radio-group>
+</van-submit-bar>
